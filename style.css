@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-between;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.left-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #248ef2, #cd88f8);
+    height: 100%;
+    width: 50%;
+    color: white;
+    position: relative;
+    
+    
+}
+
+.left-sec::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -170px;
+    transform: translateY(-50%);
+
+    width: 240px;
+    height: 120%;
+    
+    background: rgb(255, 255, 255);
+    border-radius: 100%;
+}
+
+.right-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    
+    
+    
+}
+
+h1 {
+    font-size: 64px;
+}
+.left-p {
+    margin: 20px 0 20px 3px;
+    font-size: 18px;
+    
+}
+.text{
+    border-bottom: #ffffff84 1px solid;
+    text-align: left;
+}
+.box{
+    width: 60%;
+    box-shadow: black 0px 0px 10px -3px;
+    padding: 40px;
+    border-radius: 10px;
+    color: #4d5170;
+    
+}
+h2{
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: #4d517056 1px solid;
+    padding-bottom: 8px;
+}
+.box-text-p{
+    font-size: 18px;
+    font-weight: 600;
+}
+input{
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #bfbebe;
+    box-shadow: #bfbebe 0px 0px 10px -2px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: #248ef2;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: all 0.3s ease;
+    
+    
+}
+button:hover{
+    background-color: #9b8af6;
+    transition: all 0.3s ease;
+}
+.action{
+    margin-top: 10px;
+    font-size: 14px;
+border-bottom: #4d51707d 1px solid;
+   padding-bottom: 25px;}
+.result-box{
+    color: white;
+    margin-top: 20px;
+    padding: 15px 15px 0px 15px;
+    background: linear-gradient(135deg, #5eb53a, #1c864b);
+    border-radius: 5px;
+    box-shadow: #bfbebe 0px 0px 10px -2px;
+    height: 160px;
+    
+}
+#grade{
+    font-size: 70px;
+    font-weight: 500;
+    position: relative;
+    top: -40px;
+    margin-left: 120px;
+    transition: all 0.3s ease;
+}
+#score{
+    font-weight: 600;
+    font-size: 18px;
+        transition: all 0.9s ease;
+
+}
+.box-p{
+    margin: 20px 0 10px 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+        gap: 5px;
+        /* padding: 20px; */
+    }
+
+    .left-sec {
+        width: 100%;
+        height: auto;
+        padding: 40px 20px;
+        /* border-radius: 10px; */
+    }
+
+    .left-sec::after {
+        display: none; /* Hide the decorative element on mobile */
+    }
+
+    .right-sec {
+        width: 100%;
+        height: auto;
+        /* padding: 20px 0; */
+        box-shadow: none;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .left-p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .box {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .box-text-p {
+        font-size: 16px;
+    }
+
+    input {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .result-box {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #grade {
+        font-size: 50px;
+        position: static;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    #score {
+        font-size: 16px;
+    }
+
+    .box-p {
+        margin: 10px 0;
+    }
+    .left-img{
+        width: 80%;
+    }
+}

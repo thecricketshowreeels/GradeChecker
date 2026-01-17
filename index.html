@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-sec">
+            <div class="text">
+                <h1>Grade Checker</h1>
+                <p class="left-p">Enter your score to see your grade instantly!</p>
+            </div>
+            <img src="./images/image-removebg-preview.png" alt="" class="left-img">
+        </div>
+        <div class="right-sec">
+            <div class="box">
+                <div class="action">
+                    <h2>Check Your Grade</h2>
+                    <p class="box-text-p">
+                        Enter Your Score {0-100}:
+                    </p>
+                    <input type="number" id="scoreInput" placeholder="Enter score here">
+                    <br>
+                    <button onclick="checkGrade()" class="submit-btn">Check Grade</button>
+                </div>
+                <div class="result-box">
+                    <p class="box-p">Your score is <span id="score"></span></p>
+                    <p class="box-p">Your grade is:</p><span id="grade"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
