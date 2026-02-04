@@ -161,10 +161,10 @@ border-bottom: #4d51707d 1px solid;
         background: #f3f5ff;
     }
 
-    .left-sec {
+     .left-sec {
         width: 100%;
         height: auto;
-        padding: 48px 24px 120px;
+        padding: 48px 24px 170px;
         border-radius: 0 0 15px 15px;
         
     }
@@ -254,3 +254,4 @@ border-bottom: #4d51707d 1px solid;
         margin-top: 24px;
     }
 }
+
